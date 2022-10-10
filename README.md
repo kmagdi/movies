@@ -5,4 +5,3 @@
 - filtering data
 - framer-motion
 - flipping cards
-- framer-motion
