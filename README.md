@@ -5,3 +5,4 @@
 - filtering data
 - framer-motion
 - flipping cards
+- useQuery hook
