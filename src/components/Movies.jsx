@@ -5,7 +5,8 @@ import {MyCard} from './MyCard'
 import {motion} from 'framer-motion'
 import {useQuery} from 'react-query';
 
-const url='https://api.themoviedb.org/3/search/movie?api_key=9cc1258c8b2f2e4d1d54c581ec774f91&language=hu&page=1&include_adult=false'
+const api_key=process.env.REACT_APP_API_KEY;
+const url=`https://api.themoviedb.org/3/search/movie?api_key=${api_key}&language=hu&page=1&include_adult=false`
 
 const fetchMovies = async ({queryKey}) => {
     const [_key, title] = queryKey
